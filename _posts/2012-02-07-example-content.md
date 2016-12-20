@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Example content
-meta: Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+meta: A quick way to learn how to use Markdown.
 comments: true
 ---
 
