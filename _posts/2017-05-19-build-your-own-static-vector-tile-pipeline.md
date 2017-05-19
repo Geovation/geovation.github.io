@@ -8,9 +8,8 @@ comments: true
 
 Following on from [James Milner's introduction to Tiler](/2017/05/14/tiler/),
 this post will drill into a little bit more detail about vector tiles, and the
-low-level commands tools like Tiler use behind the scenes to build vector
-tiles. By understanding the commands, you'll be able to build your own static
-vector tile pipeline.
+low-level commands tools like Tiler use behind the scenes. By understanding the
+commands, you'll be able to build your own static vector tile pipeline.
 
 NOTE: If you want to generate vector tiles that frequently need updating, you
 would be better off importing your data into PostGIS and then using a tool such
@@ -46,8 +45,9 @@ the `export` commands to set up all your paths correctly again.
 
 ## Mapbox Vector Tiles
 
-Mapbox Vector Tiles are a modern way of storing and transmitting the same sort
-of feature data you might ordinarily find in a shapefile, GeoJSON or
+[Mapbox Vector Tiles](https://www.mapbox.com/vector-tiles/specification/) are a
+modern way of storing and transmitting the same sort of feature data you might
+ordinarily find in a shapefile, GeoJSON or
 [TopoJSON](https://github.com/topojson/topojson) file.
 
 There are two features of vector tiles that make them particularly interesting
@@ -84,7 +84,7 @@ pre-coloured data) too:
 
 * Map clients can zoom in and out smoothly between the different zoom levels
   because the data can be easily scaled while new data is loaded. This is known
-  as *overzooming* or *underzooming*.
+  as *over-zooming* or *under-zooming*.
 
 * Vector tiles often have smaller file sizes than raster tiles. For example
   imagine you want to draw a line. In an image, you'd need to colour in each
@@ -104,11 +104,12 @@ These advantages of vector tiles all add up to:
 Vector tiles are also fairly easy to host cheaply since they can be represented
 as a simple directory structure of files.
 
-Google Cloud Storage is one place to host the tiles so that they can be
-retrieved by a map client. The advantage over running your own server is that
-Google will look after keeping the files accessible so that you don't need
-hosting expertise or 24 hour monitoring and response to keep your tiles
-available. It is also a cheaper option than hosting directly with Mapbox.
+[Google Cloud Storage](https://cloud.google.com/storage/) is one place to host
+the tiles so that they can be retrieved by a map client. The advantage over
+running your own server is that Google will look after keeping the files
+accessible so that you don't need hosting expertise or 24 hour monitoring and
+response to keep your tiles available. It is also a cheaper option than hosting
+directly with Mapbox.
 
 Modern browsers are able to read compressed files directly if they are
 compressed in gzip format and served with the following header:
@@ -140,11 +141,11 @@ Repeat the process to download the `TR` grid square data too. (You can also
 request them both at the same time by selecting them both to start with).
 
 Note: Each download has a `data` directory containing different *shapefiles*
-representing the different types of data available. Confusingly, each shapefile
-comes as 4 separate files. For example, the shapefile for the roads in the `TQ`
-square actually comes as `TQ_Road.shp`, `TQ_Road.shp`, `TQ_Road.shp` and
-`TQ_Road.shp`. Tiler will automatically extract the data from the archives
-you've downloaded as long as you use the correct name, in this case `Road`.
+representing the different types of data available. For example, the shapefile
+for the roads in the `TQ` square actually comes as `TQ_Road.shp`,
+`TQ_Road.shp`, `TQ_Road.shp` and `TQ_Road.shp`. Tiler will automatically
+extract the data from the archives you've downloaded as long as you use the
+correct name, in this case `Road`.
 
 Next you must download the `ostn02-ntv2-data.zip` file from [OS
 here](https://www.ordnancesurvey.co.uk/business-and-government/help-and-support/navigation-technology/os-net/ostn02-ntv2-format.html).
@@ -489,7 +490,7 @@ EOF
 
 Keeping the styles all in an external `style.json` is a bit different from the
 examples you'll see online for Mapbox GL JS, but the advantage is that the same
-style formats will work with the other clients such as Mpabox GL iOS and Mapbox
+style formats will work with the other clients such as Mapbox GL iOS and Mapbox
 GL Android.
 
 
@@ -499,7 +500,7 @@ One of the nice features of vector tiles is that you don't necessarily need to
 generate tiles for every zoom layer the browser supports. As long as you tell
 Mapbox which tiles exist in each *source*, it can use the vector data to
 dynamically resize the information from the closest tiles that are available.
-This is known as under or overzooming.
+This is known as under- or over-zooming.
 
 The `minzoom` and `maxzoom` settings in the `composite` source specify which
 zoom levels the source physically contains files for (which zoom levels you
@@ -507,9 +508,9 @@ generated with `tippecanoe`).
 
 The  `minzoom` and `maxzoom` in each style layer can be different from the
 values specified in the source (as long as they are within the bounds specified
-by `maxZoom` and `minZoom` (not the capital `Z`) in `index.html`. If they
+by `maxZoom` and `minZoom` (note the capital `Z`) in `index.html`. If they
 extend beyond the values you have tiles for, the Mapbox tile client will
-*overzoom* or *underzoom* based on the nearest available tile.
+*over-zoom* or *under-zoom* based on the nearest available tile.
 
 In this case, it means roads will still be visible in the map at zoom level 22,
 even though we only have tiles for level 15.
