@@ -1,4 +1,34 @@
-# Test Locally
+# Geovation Blog
+
+This static site is based on [Jeykll](https://jekyllrb.com/).
+
+You can see the original instructions on the internal blog here:
+
+https://geovation.atlassian.net/wiki/display/ET/2017/01/05/Geovation+Technical+Blog
+
+For those without access...
+
+To get started, create a fork, clone and install it like this:
+
+```
+git clone git@github.com:jamesgardnergeovation/geovation.github.io.git
+cd geovation.github.io.git
+gem install jekyll jekyll-paginate jekyll-gist --user-install
+```
+
+You can then serve a local version (including your drafts) like this:
+
+```
+~/.gem/ruby/2.0.0/bin/jekyll serve --drafts
+```
+
+After a few seconds and a bit of output, you should see your site at http://127.0.0.1:4000.
+
+You can add new draft posts in the `_drafts` folder.
+
+The rest of this `README.md` is for the original Hyde theme used to create this site.
+
+# Hyde
 
 If you want to play with Jekyll to see what it does:
 
