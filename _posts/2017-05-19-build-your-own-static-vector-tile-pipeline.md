@@ -458,7 +458,7 @@ cat << EOF > "build/www/style.json"
   "sources": {
     "composite": {
       "type": "vector",
-      "tiles": ["http://localhost:8000/tiles/{z}/{x}/{y}.pbf"]
+      "tiles": ["http://localhost:8000/tiles/{z}/{x}/{y}.pbf"],
       "minzoom": 0,
       "maxzoom": 15
     }
@@ -482,7 +482,7 @@ cat << EOF > "build/www/style.json"
           "line-color": "#FFFFFF",
           "line-width": 0.5
       }
-    },
+    }
   ]
 }
 EOF
