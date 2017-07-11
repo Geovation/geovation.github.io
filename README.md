@@ -14,6 +14,7 @@ To get started, create a fork, clone and install it like this:
 git clone git@github.com:jamesgardnergeovation/geovation.github.io.git
 cd geovation.github.io.git
 gem install jekyll jekyll-paginate jekyll-gist --user-install
+gem install jekyll -v 3.4.3 --user-install
 ```
 
 You can then serve a local version (including your drafts) like this:
