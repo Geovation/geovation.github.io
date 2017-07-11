@@ -21,7 +21,7 @@ Vector tiles can be rendered with JavaScript APIs like [Mapbox GL JS](https://ww
 
 The [MBtile file format](https://www.mapbox.com/help/define-mbtiles/) stores millions of compressed tiles in a single SQLite database. Mapbox's own hosting services are able to understand this format and can use it to provide the specific vector tiles that a Mapbox GL JS client needs to load to display the current map view.
 
-Mapbox GL JS is also able to fetch these tiles if they are hosted at a URL in this structure `/zoom/x/y.pbf` where `zoom` is the number representing the zoom level, and `x` and `y` are the coordinated in tile space.
+Mapbox GL JS is also able to fetch these tiles if they are hosted at a URL in this structure `/zoom/x/y.pbf` where `zoom` is the number representing the zoom level, and `x` and `y` are the coordinates in tile space.
 
 If we could extract each `.pbf` file from the `.mbtiles` file and place it in the correct directory strucutre, it would be possible to host on a conventional static file hosting such as Amazon S3 or Google Cloud Storage (which has price advantages too). 
 
