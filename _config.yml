@@ -8,12 +8,12 @@ permalink:        pretty
 title:            Geovation Tech
 tagline:          'Engineering Blog'
 description:      'Searching for technical insight in the uncharted wilderness.'
-url:              https://geovation.github.io
+url:              http://hyde.getpoole.com
 baseurl:          /
 
 author:
-  name:           'Geovation'
-  url:            https://geovation.uk/
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
 
 paginate:         5
 
@@ -21,7 +21,7 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/Geovation/geovation.github.io
+  repo:           https://github.com/poole/hyde
 
 # Geovation stuff
 gems: [jekyll-paginate, jekyll-gist]
