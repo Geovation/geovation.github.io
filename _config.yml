@@ -9,7 +9,7 @@ title:            Geovation Tech
 tagline:          'Engineering Blog'
 description:      'Searching for technical insight in the uncharted wilderness.'
 url:              https://geovation.github.io
-baseurl:          /
+baseurl:          https://geovation.github.io/
 
 author:
   name:           'Geovation'
