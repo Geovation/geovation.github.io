@@ -25,3 +25,5 @@ github:
 
 # Geovation stuff
 gems: [jekyll-paginate, jekyll-gist, jekyll-sitemap]
+
+google_analytics: UA-103986450-1
