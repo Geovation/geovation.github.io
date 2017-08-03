@@ -9,7 +9,7 @@ title:            Geovation Tech
 tagline:          'Engineering Blog'
 description:      'Searching for technical insight in the uncharted wilderness.'
 url:              http://tech.geovation.uk
-baseurl:          /
+baseurl:          /seb
 
 author:
   name:           'Geovation'
