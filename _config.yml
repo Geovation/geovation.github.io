@@ -24,6 +24,10 @@ github:
   repo:           https://github.com/Geovation/geovation.github.io
 
 # Geovation stuff
-gems: [jekyll-paginate, jekyll-gist, jekyll-sitemap]
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 google_analytics: UA-103986450-1
