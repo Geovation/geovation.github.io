@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Introduction to MatchMyRoute - an app for matching up experienced with inexperienced cyclists
-meta: Geovation does not only support project of their programme members, but we also work on our own projects. MatchMyRoute
-links into our current annual focus of greener and smarter communities. Its aim is to make cycling more accessible and lower the barrier to picking up cycling. This is done by connecting experienced cyclists who regularly take a route with inexperienced cyclists who can join the experienced on their route.
+meta: Geovation does not only support project of their programme members, but we also work on our own projects. MatchMyRoute links into our current annual focus of greener and smarter communities. Its aim is to make cycling more accessible and lower the barrier to picking up cycling. This is done by connecting experienced cyclists who regularly take a route with inexperienced cyclists who can join the experienced on their route.
 author: Max Stephan
 comments: true
 permalink: matchmyroute
