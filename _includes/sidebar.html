@@ -1,11 +1,11 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="{{ site.BASE_PATH }}/">
+      <a href="{{ site.author.url }}">
         <img class="sidebar-logo" src="{{ site.BASE_PATH }}/assets/Geovation-orangeb_portrait.png" />
       </a>
       <h1>
-        <a href="{{ site.baseurl }}">
+        <a href="{{ site.url }}">
           {{ site.tagline }}
         </a>
       </h1>
@@ -34,6 +34,6 @@
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span-->
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }} <a href="https://geovation.uk" target="_blank">Geovation</a></p>
+    <p>&copy; {{ site.time | date: '%Y' }} <a href="https://geovation.uk">Geovation</a></p>
   </div>
 </div>
