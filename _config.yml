@@ -8,7 +8,7 @@ permalink:        pretty
 title:            Geovation Tech
 tagline:          'Engineering Blog'
 description:      'Searching for technical insight in the uncharted wilderness.'
-url:              http://tech.geovation.uk
+url:              https://geovation.github.io
 baseurl:          /
 
 author:
