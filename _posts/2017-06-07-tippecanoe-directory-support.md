@@ -1,9 +1,9 @@
 ---
-layout: post
+category: tech
+tags: notes
 title: Introducing Tippecanoe Directory Support
 meta: This post describes how we have modified Tippecanoe to achieve directory support.
 author: Joy Shan-Chun Kuo
-comments: true
 ---
 
 In a [previous post](/2017/05/14/tiler/) James Milner introduced [Tiler](https://github.com/geovation/tiler), which utilizes tools such as [ogr2ogr](http://www.gdal.org/ogr2ogr.html) from GDAL and [Tippecanoe](https://github.com/mapbox/tippecanoe) from Mapbox to convert geospatial vector data into a directory of raw vector tiles for further use. Prior to my pull request, Tippecanoe was only able to generate and use MBtiles rather than directories of vector tiles. This post will introduce the process of modification for Tippecanoe to realize directory support in detail.
