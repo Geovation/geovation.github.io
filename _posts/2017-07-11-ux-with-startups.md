@@ -1,9 +1,9 @@
 ---
-layout: post
+category: tech
+tags: notes
 title: UX Ideation and Requirements Workshop for designing with start-ups
 meta: At Geovation we play the role of a start-up accelerator – that means we bring start-ups into our programme and provide them funding and expertise to develop and grow their product and business. The most important thing as a designer is to bring yourself up to speed with the business and product, their language, their customers and their user needs.
 author: Chris Hall
-comments: true
 ---
 
 ## The setting

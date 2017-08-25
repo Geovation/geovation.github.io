@@ -1,9 +1,9 @@
 ---
-layout: post
+category: tech
+tags: notes
 title: Build Your Own Static Vector Tile Pipeline
 meta: Following on from Tiler, this post looks at the low level commands necessary to generate vector tiles from scratch. I'll also describe how to use attributes and filtering to style layers in a way that works on iOS, Android, and the Web.
 author: James Gardner
-comments: true
 ---
 
 Following on from [James Milner's introduction to Tiler](/2017/05/14/tiler/),
