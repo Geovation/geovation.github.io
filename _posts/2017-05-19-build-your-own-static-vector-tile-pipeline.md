@@ -6,7 +6,7 @@ meta: Following on from Tiler, this post looks at the low level commands necessa
 author: James Gardner
 ---
 
-Following on from [James Milner's introduction to Tiler](/2017/05/14/tiler/),
+Following on from [James Milner's introduction to Tiler](/tiler),
 this post will drill into a little bit more detail about vector tiles, and the
 low-level commands tools like Tiler use behind the scenes. By understanding the
 commands, you'll be able to build your own static vector tile pipeline.
