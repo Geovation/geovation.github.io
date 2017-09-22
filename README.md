@@ -78,6 +78,14 @@ bundle install
 
 To update the theme run `bundle update`.
 
+## Updating pages
+Run
+```bash
+bundle install
+jekyll serve
+```
+Open your browser to http://127.0.0.1:4000 , change the pages, see Jekyll building the site and then just refresh the browser
+
 ---
 
 ## Contributing
