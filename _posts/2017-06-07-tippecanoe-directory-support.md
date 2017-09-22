@@ -6,7 +6,7 @@ meta: This post describes how we have modified Tippecanoe to achieve directory s
 author: Joy Shan-Chun Kuo
 ---
 
-In a [previous post](/2017/05/14/tiler/) James Milner introduced [Tiler](https://github.com/geovation/tiler), which utilizes tools such as [ogr2ogr](http://www.gdal.org/ogr2ogr.html) from GDAL and [Tippecanoe](https://github.com/mapbox/tippecanoe) from Mapbox to convert geospatial vector data into a directory of raw vector tiles for further use. Prior to my pull request, Tippecanoe was only able to generate and use MBtiles rather than directories of vector tiles. This post will introduce the process of modification for Tippecanoe to realize directory support in detail.
+In a [previous post](/tiler/) James Milner introduced [Tiler](https://github.com/geovation/tiler), which utilizes tools such as [ogr2ogr](http://www.gdal.org/ogr2ogr.html) from GDAL and [Tippecanoe](https://github.com/mapbox/tippecanoe) from Mapbox to convert geospatial vector data into a directory of raw vector tiles for further use. Prior to my pull request, Tippecanoe was only able to generate and use MBtiles rather than directories of vector tiles. This post will introduce the process of modification for Tippecanoe to realize directory support in detail.
 
 ## What are the advantages of Vector Tiles?
 
@@ -116,7 +116,7 @@ right 2017](https://www.ordnancesurvey.co.uk/business-and-government/licensing/u
 
 ## Conclusion
 
-Tippecanoe directory support has been implemented with success, including the `tile-join` tool. It can be beneficial to adopt a directory structure and merging process for handling vector tiles, which can be further used for rendering, as in [Tiler](/2017/05/14/tiler/) and [building your own static vector tile pipeline](/2017/05/19/build-your-own-static-vector-tile-pipeline/).
+Tippecanoe directory support has been implemented with success, including the `tile-join` tool. It can be beneficial to adopt a directory structure and merging process for handling vector tiles, which can be further used for rendering, as in [Tiler](/tiler/) and [building your own static vector tile pipeline](/build-your-own-static-vector-tile-pipeline/).
 
 It was such a positive experience to make contributions to Mapbox's Tippecanoe. We hope that this achievement can provide a method for anyone in the need of vector tiles.
 
