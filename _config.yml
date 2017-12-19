@@ -179,7 +179,7 @@ timezone: Europe/London # http://en.wikipedia.org/wiki/List_of_tz_database_time_
 
 
 # Plugins
-gems:
+pkugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -230,6 +230,8 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+github: [metadata]
 
 # Defaults
 defaults:
