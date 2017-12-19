@@ -9,5 +9,5 @@ If your idea needs property or location information to make it work, you’ve co
 
 This blog is an unruly space where our team of software engineers can share code, educate us with their location-based projects and for all things tech related. 
 
-Visit  ![Geovation](https://geovation.uk/programme/) to find out more about our funded accelerator programme for property and location-based startups. 
+Visit [Geovation](https://geovation.uk/programme/) to find out more about our funded accelerator programme for property and location-based startups. 
 
