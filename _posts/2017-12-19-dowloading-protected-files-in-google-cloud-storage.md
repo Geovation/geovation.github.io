@@ -12,9 +12,13 @@ Geovation have just developed a [Progressive Web App](https://developers.google.
 ## Problem
 The client must provide a link to download a picture that the user has purchased using the less API power as possible. We could simply create an end point that let the API read the image and just respond with it. But that would use the network twice (from the client to the API and from the API to the storage) extra CPU power. The pictures are not public otherwise they would be accessible even to users than don't have purchased them.
 
+![download via GAE](/assets/download_via_GAE.png)
+
 ## Solution
 An end point that return a temp url that let the user download the image leveraging the Google infrastructure. When the user clicks on the image, we call Firebase to retrieve a user idToken and then call the API with the image ID and the idToken just retrieved. The API would call Firebase again with that idToken and retrieve the user ID. With that user ID, the API can validate if the user has access to the picture querying the Datastore and then generate a link that will be valid for just few seconds: just enough time to let the browser start the download.
 The starts the download as soon as it gets the URL.
+
+![download via direct link](/assets/download_via_direct_link.png)
 
 ## Some relevant code
 ### get Firebase user's idToken
