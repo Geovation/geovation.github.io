@@ -11,7 +11,7 @@ A project initiated for reducing the costs and time of updating UK highway maps 
 
 ## Introduction
 
-The advance in technology and the increase demand on using geospatial data in diversity of projects in public transportation, environment, oil & gas, housing, etc, has led to a variety of providers of geospatial data ranging from government agencies, companies and open-source communities, such as [Ordnance Survey (OS)](https://www.ordnancesurvey.co.uk), [Google Maps](https://www.google.com/maps), and [Open Street Map (OSM)](https://www.openstreetmap.org) to name a few. The highway roads information is continuously changing and these changes lead to mismatches in databases due to time taken to figure changes and update databases.
+The advance in technology and the increasing demand of using geospatial data in diversity of projects in public transportation, environment, oil & gas, housing, etc, has led to a variety of providers of geospatial data ranging from government agencies, companies and open-source communities, such as [Ordnance Survey (OS)](https://www.ordnancesurvey.co.uk), [Google Maps](https://www.google.com/maps), and [Open Street Map (OSM)](https://www.openstreetmap.org) to name a few. The highway roads information is continuously changing and these changes lead to mismatches in databases due to time taken to figure changes and update databases.
 
 In this [project](https://github.com/Geovation/roads) a planed procedure is proposed to analyse and find the mismatches between databases from different sources to provide a valuable information for surveyors so that mismatched information can be investigated and checked to update databases more efficiently.
 
@@ -53,14 +53,14 @@ The data is acquired from the websites of [OS](https://www.ordnancesurvey.co.uk)
 * Crop the map to the specified area.
 * Filter data using SQL query.
 
-Choosing the required layer should be run first. The other steps can be interchangeable. However, all the steps can be merged in one command line to process the data. For more details on how to implement the [`ogr2ogr`](https://www.gdal.org/ogr2ogr.html) click [here](https://github.com/Geovation/roads/blob/master/InputY/README.mds).
+Choosing the required layer should be run first. The other steps can be interchangeable. However, all the steps can be merged in one command line to process the data. For more details on how to implement the [`ogr2ogr`](https://www.gdal.org/ogr2ogr.html) click [here](https://github.com/Geovation/roads/blob/master/InputY/README.md).
 
 The data obtained is then processed further using a script to check validity of links coordinates.
 
 ### The first task is comparing road links from OS and OSM and find a possible one match for every link from OS in OSM.
 
 The data processed is used as input for the script to find roads matches using the road name and coordinates. The name is compared first and when a match is found, the coordinates (position of roads) is compared using function [`lineOverlap`](http://turfjs.org/docs/#lineOverlap) from library [`turfJS`](http://turfjs.org). The function takes two required inputs of type [`lineString`](http://turfjs.org/docs/#lineString) and an optional input of type number as distance tolerance.
-The match possibilities are; no-match, one-match, multi-match or a road without a name. The output of one-match required to be highest. The tolerance have been varied to find the optimum length as shown in the graph.
+The match possibilities are; no-match, one-match, multi-match or a road without a name. The output of one-match required to be highest. The tolerance have been varied to find the optimum length as shown in Figure 1.
 
 ![Image](/assets/roads/vary-tolerance.svg)
 
@@ -77,7 +77,7 @@ The script has been tested on small area and London. The results shows some erro
 
 **Figure 2** - Schematic of overlap error when road split with small distance.
 
-* At junctions, links from different road direction may overlap at small portion (Figure 1). This can be overcome by considering links with overlap length over link length to be greater than 0.5.
+* At junctions, links from different road direction may overlap at small portion (Figure 3). This can be overcome by considering links with overlap length over link length to be greater than 0.5.
 
 ![Image](/assets/roads/road-junction.svg)
 
