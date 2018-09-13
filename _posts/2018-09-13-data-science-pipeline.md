@@ -9,6 +9,8 @@ comments: true
 
 The buzz around data and advanced analytics has marred the true value of an effective data science process in addressing real world problems. Getting some data and throwing some science at it does not equate to a successful business (or other) solution. In this post, we will look to identify some key principles and processes within the data science pipeline that will help you to maximise the value gained from future data science and analytics ventures.
 
+![Image](/assets/buzz-worrds.png)
+
 ### Framing a data science problem
 
 The pipeline naturally begins here, and it should not be overlooked – 30% of Data Scientists report the lack of a [clear question](https://www.kaggle.com/surveys/2017) to have been a barrier at work. Accurately defining a data science problem is more difficult than it seems. Often stakeholders are not sure what they want, often the scope of a project is not well defined, and often a data scientist might be expected to solve all data problems (not all data problems are data science problems). These issues are best managed with an open discussion on expectations between technical and non-technical stakeholders. Ultimately, be specific and realistic with the problem you want to solve and define a question with a measurable outcome. 
@@ -53,7 +55,7 @@ We now have clean data, an understanding of the data and a refined research ques
 -	Consider feature engineering to boost performance. This is considered as one of the most important elements in applied machine learning and model building; so much so that Andrew NG (co-founder of Google Brain) famously said *"Applied machine learning is basically feature engineering"*. Feature engineering involves using domain knowledge (and intuition) to create new input features from existing features. The process empowers algorithms to focus and learn the essential elements of the data. Generally, better features equate to better performance.
 -	Iterate. Run through the process several times, playing with features, models and parameters until you reach a level of performance you are satisfied with. 
 
-
+![Image](/assets/DS.png)
 
 ### Communication and visualisation
 
