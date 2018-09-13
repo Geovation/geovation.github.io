@@ -55,7 +55,7 @@ We now have clean data, an understanding of the data and a refined research ques
 -	Consider feature engineering to boost performance. This is considered as one of the most important elements in applied machine learning and model building; so much so that Andrew NG (co-founder of Google Brain) famously said *"Applied machine learning is basically feature engineering"*. Feature engineering involves using domain knowledge (and intuition) to create new input features from existing features. The process empowers algorithms to focus and learn the essential elements of the data. Generally, better features equate to better performance.
 -	Iterate. Run through the process several times, playing with features, models and parameters until you reach a level of performance you are satisfied with. 
 
-![Image](/assets/DS.png)
+![Image](/assets/DS.jpg)
 
 ### Communication and visualisation
 
