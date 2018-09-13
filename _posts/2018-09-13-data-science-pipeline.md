@@ -61,6 +61,7 @@ We now have clean data, an understanding of the data and a refined research ques
 
 This final stage will determine whether your insights are acted upon or not. At this point, only you (and maybe your team) know the importance of your results. All that's left to do is to make others aware of why what you have found matters – a task more difficult than it sounds. You want to tell a compelling story that is persuasive but true to the data. It is critical to communicate your findings in a concise and clear way such that non-technical audiences understand the importance of your results. Think creatively about how to craft a narrative of your data driven results and consider how your findings will drive business decisions. Visuals resonate well with all audiences but again, keep these simple and effective. 
 
+### Summary
 
 Be advised, this is not an exhaustive description of the data science process and often you will enact steps in a nonlinear manner. It is however a framework from which you can build. Use it to find what *works best for you and your business*. 
 
