@@ -231,6 +231,8 @@ compress_html:
   ignore:
     envs: development
 
+github: [metadata]
+
 # Defaults
 defaults:
   # _posts
