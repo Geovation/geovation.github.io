@@ -10,9 +10,9 @@ comments: true
 
 # Introduction
 
-Whether you are a seasoned QGIS user or new to the whole world of GIS: You have probably more than once applied a repetitive row of manipulations to your data until you've received the final results. Then when you get a new dataset and want to apply the same logic: Same procedure. This is not only time-consuming but also prone to errors, you might set some parameters slightly different without noticing for example and compare pears with apples.
+Whether you are a seasoned QGIS user or new to the whole world of GIS you have probably applied a repetitive set of manipulations to your data. Then when you get a new dataset and want to apply the same logic - same procedure. This is not only time-consuming but also prone to errors. You might set some parameters slightly differently without noticing for example and compare pears with apples.
 
-Luckily QGIS comes with a nice tool to help you in these cases. I have only really started using it recently and it is by no means perfect (more on this in the [pitfalls section](#pitfalls-and-alternatives) at the bottom). But it is great for what it is built for in my opinion: Repetitive, even complex processing flows, with not too complex and big data inputs.
+Luckily QGIS comes with a nice tool to help you in these cases. I have only  really started using it recently and it is by no means perfect (more on this in  the [pitfalls section](#pitfalls-and-alternatives) at the bottom) but it is great for what it is built for -  repetitive, even complex processing flows, on small to medium sized datasets of  relatively simple data.
 
 In this post I will walk through the features of the processing modeler using an example scenario. Towards the end I will discuss potential pitfalls of the tool as well as alternatives.
 
@@ -55,15 +55,17 @@ As a scenario I would like to calculate the population density per region in Tan
 Data type  | Source |  Weblink
 --|---|--
 Population data  | Facebook Open Population Dataset  | [Data Download](http://www.ciesin.columbia.edu/repository/hrsl/hrsl_tza_v1.zip) ([Facebook Blog Post about Open Population Datasets](https://code.fb.com/connectivity/open-population-datasets-and-open-challenges/) )
-Administrative boundaries: Regions of Tanzania  |  OpenStreetMap level 4 administrative boundaries, extracted using the Overpass API. Saved as GeoJSON   |  [Permalink to Overpass Turbo query](http://overpass-turbo.eu/s/Eue)
+Administrative boundaries: Regions of Tanzania  |  OpenStreetMap level 4 administrative boundaries, extracted using the Overpass API. Saved as GeoJSON   |  [Permalink to Overpass Turbo query](http://overpass-turbo.eu/s/Eue) - Click on _Run_, click _continue anyway_ when a warning comes up, then click _Export_ once processing has finished and _Download as GeoJSON_
 
-You can load these two datasets into QGIS to inspect them.
+The following steps will explain how to load the data sets into QGIS.
 
 ## Administrative areas
 
+Grab the GeoJSON you have downloaded from the Overpass API and drag it into QGIS. Alternatively you can add it through the menu via _Layer_ - _Add layer_ - _Vector Layer_.
+
 ![administrative areas inspected in QGIS](../assets/images/qgis-processing-modeler/qgis-admin-zones.png)
 
-There will be two layers in the boundaries geojson, one with points, one with polygons. We will have export the polygon to a new layer by _right-clicking on the layer_ and then _Export_ > _Save Feature as_. You can pick a format of your choice and make sure to leave _Add save file to map_ checked.
+There will be two layers in the boundaries GeoJSON, one with points, one with polygons. We will have to export the polygon to a new layer by _right-clicking on the layer_ and then _Export_ > _Save Feature as_. You can pick a format of your choice and make sure to leave _Add save file to map_ checked. Also make sure to name the exported file to something meaningful, like _admin_zones_
 
 ![exporting features as file](../assets/images/qgis-processing-modeler/admin-zone-export.png)
 
@@ -71,7 +73,7 @@ This step is required because otherwise when working directly on the GeoJSON the
 
 ## Population data
 
-Extract the zip file for Tanzania that you have downloaded from the Columbia University page. Now load the population data GeoTIFF into QGIS (hrsl_tza_pop.tif). Your map should now look like below.
+Extract the zip file for Tanzania that you have downloaded from the Columbia University page. Now load the population data GeoTIFF into QGIS (hrsl_tza_pop.tif) - again easiest by dragging and dropping it into QGIS, or alternatively through the menu _Layer_ - _Add Layer_ - _Add Raster Layer_. Your map should now look like below.
 
 ![admin areas and population data shown in QGIS](../assets/images/qgis-processing-modeler/qgis-map-inspection.png)
 
@@ -116,7 +118,7 @@ Now that you defined what goes into your model, you want to do something with th
 
 To calculate the population sum per region we can use the sum of all pixels within the region, using the _Zonal statistics_ tool.
 
-- Add the _Zonal statistics_ algorithm to the workspace from the _Algorithms_ tab
+- Add the _Zonal statistics_ algorithm to the workspace from the _Algorithms_ tab (it is easiest to find it using the search tool in the _Algorithms_ tab)
 - Configure it as follows:
 
 Field  |  Value
@@ -187,13 +189,13 @@ Your model is now complete. As a final step you need to store it.
 
 - Give your model a name in your top left corner, for example _Population_per_area_
 - Define a group, for example _Population-Calculations_. This will aggregate the models into logical groups in your toolbox when you access it later.
-- Press _Save model_ in the menu bar and save it in a location of your choice (the default location is fine)
+- Press _Save model_ in the menu bar and save it in the default location (if you select another location the model will still work, but it will not show up in the QGIS toolbox)
 
 ## Running your model
 
 After saving you can access your model by
 
-- going into your QGIS toolbox under _Models_ - _&lt;your-group-name&gt;_ - _&lt;your-model-name&gt;_
+- going into your QGIS toolbox (accessible through the _Cog_ icon in the menu bar for example) under _Models_ - _&lt;your-group-name&gt;_ - _&lt;your-model-name&gt;_ - open the model through double-clicking on it
 - the play button on the far right of the menu bar in the Processing Modeler editor
 
 A window will open, asking you for your inputs:
@@ -207,7 +209,7 @@ A window will open, asking you for your inputs:
 Click on _run_ to kick off the model. A log will be shown that brings up any errors and process messages. When the process finished the output will be added to your map.
 
 To make your map more meaningful you can colour the regions in based on their population density:
-Right-click on the result layer (population_per_area), go to the symbology tab and set it to:
+Right-click on the result layer (population_per_area), select _Properties ..._, go to the symbology tab and set it to:
 
 Field  |  Value
 --|--
@@ -220,7 +222,7 @@ Below is a screenshot of how the settings should look like:
 
 ![screenshot of the result layer symbology settings window](../assets/images/qgis-processing-modeler/styling-settings.png)
 
-Press _Classify_
+Press _Classify_ and then _OK_.
 
 You should then get a map similar to the one below (depending on which colour ramp you chose)
 
