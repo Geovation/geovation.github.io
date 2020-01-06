@@ -7,4 +7,5 @@ slug: "overriding-django-widget-templates"
 
 # Why Assume?
 
-Use the 5-whys technique to dig into your Leap of Faith assumptions (the Startup Way, page 92)
+Use the 5-whys technique to dig into your Leap of Faith assumptions (the Startup Way, page 92) and Pains/Gains. You *HAVE* to get to the detail, otherwise it't no use to you.
+# Look in the weeds, not the clouds?
