@@ -40,7 +40,7 @@ In general, the decisions we make are based on the following principles:
    
 * Make it work, then make it right:
 
-   To paraphrase a [useful expression](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good){:target="_blank"}, 'perfect is the enemy starting up'.  The more time/resource/money you spend building your startup technology the less likely it is that you will start up at all.  It is highly likely that whatever we build will be thrown away and started all over again when a startup hires their own team so we purposely build our experiments to be thrown away.  We purposely use tried and tested technologies (like **[Django](){:target="_blank"}**) because they're... tried and tested!  We avoid 'shiny' new technology as it invariably takes many times longer to get anything working (due, commonly, to the immaturity of the product and lack of suitable documentation/experience).
+   To paraphrase a [useful expression](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good){:target="_blank"}, 'perfect is the enemy of starting up'.  The more time/resource/money you spend building your startup technology the less likely it is that you will start up at all.  It is highly likely that whatever we build will be thrown away and started all over again when a startup hires their own team so we purposely build our experiments to be thrown away.  We purposely use tried and tested technologies (like **[Django](){:target="_blank"}**) because they're... tried and tested!  We avoid 'shiny' new technology as it invariably takes many times longer to get anything working (due, commonly, to the immaturity of the product and lack of suitable documentation/experience).
 
 The main Foundation Sessions we offer are as follows:
 
