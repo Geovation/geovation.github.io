@@ -7,8 +7,6 @@ author: "Paul Nebel"
 comments: true
 ---
 
-# Why Assume?
-
 The first step in creating your business should be the [Value Proposition][valueprop]. This is a very effective means of exploring and defining the problem to be solved and establishing whether your proposed solution is sufficiently effective at mitigating that problem for users to want to pay for it.  Once you've created your [Value Proposition Canvas][valuepropcanv] your next task is to verify it by formulating hypotheses.
 
 One of the defining characteristics of a startup is extreme uncertainty.  This uncertainty makes it difficult to produce accurate forecasts.  The best that a startup can do in these circumstances is to form a set of hypotheses (in the scientific sense - i.e. a proposed explanation for a set of circumstances *that can be tested*) about what we'd like to see happen. In his book [The Startup Way][startupway], [Eric Ries][ericries] refers to these as *leap-of-faith assumptions* or **LOFA**.
