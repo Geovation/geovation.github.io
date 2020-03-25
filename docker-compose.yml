@@ -1,0 +1,12 @@
+# docker-compose up
+
+version: "3"
+
+services:
+  jekill:
+    container_name: jekyll
+    image: jekyll/jekyll
+    volumes:
+      - .:/srv/jekyll
+    command: jekyll build --watch
+    # command: bundle update
