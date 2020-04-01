@@ -97,7 +97,6 @@ This means the IT security of a start-up shouldn’t just be the priority of the
 
 At the heart of it all, every start-up should have an individual who is responsible for managing the information systems and this person must be a member of the organisation. This is vital and could save the start-up thousands of pounds.
 
-[ecc]: https://www.eccouncil.org/
 [cm]: https://www.cisomag.com/small-businesses-in-the-uk-suffer-10000-cyber-attacks-per-day-fsb/
 [Acunetix]: https://www.cisomag.com/small-businesses-in-the-uk-suffer-10000-cyber-attacks-per-day-fsb/
 [pts]: https://www.ptsecurity.com/ww-en/analytics/corp-vulnerabilities-2019/
@@ -106,3 +105,4 @@ At the heart of it all, every start-up should have an individual who is responsi
 [ptes]: http://www.pentest-standard.org/index.php/Main_Page
 [owasp]: https://owasp.org/www-project-top-ten/
 [osstmm]: https://www.isecom.org/OSSTMM.3.pdf
+[ecc]: https://www.eccouncil.org/
