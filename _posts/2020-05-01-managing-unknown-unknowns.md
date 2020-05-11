@@ -2,6 +2,7 @@
 title: "De-Rumsfelding, or Managing unknown unknowns"
 meta: "If you're not sure then test to find out.  If you're sure then test to show how right you are. You know what? Just test!"
 categories: Insights Startup
+author: "Paul Nebel"
 slug: "managing-unknow-unknowns"
 ---
 
