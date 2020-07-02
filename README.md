@@ -7,6 +7,6 @@ More info about Jekyll in https://jekyllrb.com/
 just create a new page in `_posts` using the naming convention (data_title.md). See the existing ones !
 
 # How to test ?
-just run `docker-compose up` and open `_site/index.html` with a browser with `open _site/index.html`.
+just run `docker-compose up` and open `http://localhost:4000` with a browser with `open http://localhost:4000`.
 To update the packages just run `docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll bundle update`
 For more info read https://github.com/envygeeks/jekyll-docker/blob/master/README.md

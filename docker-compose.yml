@@ -6,7 +6,10 @@ services:
   jekill:
     container_name: jekyll
     image: jekyll/jekyll
+    ports:
+      - "4000:4000"
     volumes:
       - .:/srv/jekyll
-    command: jekyll build --watch
+    # command: jekyll build --watch
     # command: bundle update
+    command: jekyll serve

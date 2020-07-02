@@ -254,3 +254,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
