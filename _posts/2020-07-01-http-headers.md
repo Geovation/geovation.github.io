@@ -36,7 +36,7 @@ The headers are grouped in four main subsets:
 ## Case studies
 Below are some of the web securities issues related to security headers that I have encountered whilst testing applications.
 
-### The Content-Security-Policy (CSP)
+### 1. The Content-Security-Policy (CSP)
 
 The HTTP Content-Security-Policy (CSP) response header allows web site administrators to control resources the user agent is allowed to load for a given page. The policies mostly involve specifying server origins and script endpoints.  
 
@@ -49,7 +49,7 @@ A CSP format is defined in the following way -  Content-Security-Policy: policy.
 #### Testing CSP
 It’s always a good thing to test a configured CSP, therefore you should use [Content-Security-Policy-Report-Only][csp] instead.
 
-### The Expect-CT header  
+### 2. The Expect-CT header  
 This header lets sites opt in to reporting and/or enforcement of Certificate Transparency (CT) requirements. [Certificate Transparency][ct] is an open framework for monitoring SSL Certificates. With CT, all certificates are publicly disclosed. It makes it very difficult for a Certification Authority to issue an SSL/TLS Certificate for a domain without the certificate being visible to the owner of that domain. When this header is enabled the website is requesting the browser to verify whether or not the certificate appears in the public [CT logs][ctlogs].
 
 #### Threat mitigation
@@ -60,7 +60,7 @@ This header lets sites opt in to reporting and/or enforcement of Certificate Tra
 #### Configuration
 The header could be defined as follows: ```Expect-CT: max-age=7776000, enforce, report-uri="https://www.xyz.com/report"```
 
-### X-Powered-By
+### 3. X-Powered-By
 This may be set by hosting environments or other frameworks and contains information about them while not providing any usefulness to the application or its visitors.
 
 Here is an example of this: ```X-Powered-By: PHP/5.4.4```
@@ -71,7 +71,7 @@ An attacker can use this information to pull down the list of [CVEs][cves]. In t
 
 It is wise to unset this header to avoid exposing potential vulnerabilities or at the very least not mention the technology version of the application. The harder an attacker must work to identify your system’s technology, the more detectable their actions will be.
 
-### X-Frame-Options
+### 4. X-Frame-Options
 The X-Frame-Options HTTP header field indicates a policy that specifies whether the browser should render the transmitted resource within a frame or an iframe. If this X-Frame-Options header is not included in the HTTP response from the server, It leaves the application open to 'ClickJacking' attacks.
 
 #### Threat mitigation
@@ -80,11 +80,11 @@ Clickjacking is when an attacker uses multiple transparent or opaque layers to t
 
 #### Configuration
 These could be instructions to the browser to not allow framing from other domains.
-- ```X-Frame-Options: ALLOW-FROM URL``` grants a specific URL to load itself in a iframe.
-- ```X-Frame-Options: DENY``` completely denies to be loaded in frame or iframe.
-- ```X-Frame-Options: SAMEORIGIN``` allows only if the site which wants to load has a same origin.
+- ```X-Frame-Options: ALLOW-FROM URL``` - grants a specific URL to load itself in a iframe.
+- ```X-Frame-Options: DENY``` - completely denies to be loaded in frame or iframe.
+- ```X-Frame-Options: SAMEORIGIN``` - allows only if the site which wants to load has a same origin.
 
-### Protecting Data in Transit with HTTP Strict Transport Security (HSTS)
+### 5. Protecting Data in Transit with HTTP Strict Transport Security (HSTS)
 
 When using an ordinary HTTP connection, users are exposed too many risks because the data is transmitted in plaintext. An attacker capable of intercepting network traffic anywhere between a user's browser and a server can eavesdrop or even tamper with the data completely undetected, which compromises confidentiality and data integrity.
 
@@ -102,7 +102,7 @@ The HSTS's strict [rules][rules] mean that the following threats and the scenari
 
 #### Configuration  
 
-In order to enable this header, it is as simple as adding the following: ```Strict-Transport-Security: max-age=15768000```
+In order to enable this header, it is as simple as adding the following policy: ```Strict-Transport-Security: max-age=15768000```
 
 ## Conclusion
 Your security posture is only as strong as the last test or measures implemented. The word I often hear is, you highlighted it as good practices therefore It is not important.
