@@ -7,9 +7,9 @@ comments: true
 ---
 
 ## Introduction
-My name is Aymar. I work for Geovation as a Junior software developer, with a focus on cyber security. I have a master's in security and about to complete the [E-C Council][ecc] certification as an Ethical Hacker. My interests range from tennis, football and to all things related to Cybersecurity.
+My name is Aymar. I work for Geovation as a Junior software developer, with a focus on cyber security. I have a master's in Cyber security and recently qualified as a Certified Ethical Hacker from the [E-C Council][ecc]. My interests range from tennis, football and to all things related to Cybersecurity.
 
-Security is a huge topic. Although I am reducing the scope of this article to web applications HTTP security headers, it's nowhere near the comprehensive catalogue of concepts you need to know and consider. But I will attempt to highlight some basic good practices which every developer should carry out as a matter of course.    
+Security is a huge topic. Although I am reducing the scope of this article to web applications HTTP security headers, it's still nowhere near the comprehensive catalogue of concepts you need to know and consider. But I will attempt to highlight some basic good practices which every developer should carry out as a matter of course.    
 
 HTTP security headers provide another layer of security by helping to mitigate attacks and web vulnerabilities. These headers tell your browser how to behave when handling your website's content.
 
@@ -20,7 +20,7 @@ In this article written in a personal capacity I will:
 - provide reference and guidance in how to address each risk highlighted
 
 ## Definitions  
-HTTP headers let the client and the server pass additional information with an HTTP request or response. An [HTTP header][http] consists of its case-insensitive name followed by a colon (:), then by its value.
+HTTP headers let the client and the server pass additional information with an HTTP request or response. An [HTTP header][http] consists of its name followed by a colon (:), then by its value.
 
 ## Headers categories  
 The headers are grouped in four main subsets:
@@ -33,7 +33,8 @@ The headers are grouped in four main subsets:
 
 - Entity headers contain information about the body of the resource, like its content length or MIME type.  
 
-## Case studies  
+## Case studies
+Below are some of the web securities issues related to security headers that I have encountered whilst testing applications.
 
 ### The Content-Security-Policy (CSP)
 
@@ -43,9 +44,9 @@ The HTTP Content-Security-Policy (CSP) response header allows web site administr
 The CSP helps prevent attacks such as Cross Site Scripting (XSS) and other code injection attacks.  
 
 #### Configuration
-A CSP format is defined as Content-Security-Policy: policy. The following configuration ```Content-Security-Policy: default-src 'none'; script-src https://www.lognuk.co.uk``` tells the browser not to load any resources from any sources and the second part ```script-src https://www.lognuk.co.uk``` tells the browser to allow scripts from www.lognuk.co.uk over https://
+A CSP format is defined in the following way -  Content-Security-Policy: policy. For e.g., the following configuration ```Content-Security-Policy: default-src 'none'; script-src https://www.lognuk.co.uk``` tells the browser not to load any resources from any sources and the second part ```script-src https://www.lognuk.co.uk``` tells the browser to allow scripts from www.lognuk.co.uk over https://
 
-#### Testing
+#### Testing CSP
 It’s always a good thing to test a configured CSP, therefore you should use [Content-Security-Policy-Report-Only][csp] instead.
 
 ### The Expect-CT header  
@@ -68,7 +69,20 @@ An attacker can use this information to pull down the list of [CVEs][cves]. In t
 
 #### Threat mitigation
 
-It’ s wise to unset this header to avoid exposing potential vulnerabilities. The harder an attacker must work to identify your system’s technology, the more detectable their actions will be.
+It is wise to unset this header to avoid exposing potential vulnerabilities or at the very least not mention the technology version of the application. The harder an attacker must work to identify your system’s technology, the more detectable their actions will be.
+
+### X-Frame-Options
+The X-Frame-Options HTTP header field indicates a policy that specifies whether the browser should render the transmitted resource within a frame or an iframe. If this X-Frame-Options header is not included in the HTTP response from the server, It leaves the application open to 'ClickJacking' attacks.
+
+#### Threat mitigation
+Clickjacking is when an attacker uses multiple transparent or opaque layers to trick a user into clicking on a button or link on a framed page when they were intending to click on the top level page.
+- Servers can declare this policy in the header of their HTTP responses, which ensures that their content is not embedded into other pages or frames.
+
+#### Configuration
+These could be instructions to the browser to not allow framing from other domains.
+- ```X-Frame-Options: ALLOW-FROM URL``` grants a specific URL to load itself in a iframe.
+- ```X-Frame-Options: DENY``` completely denies to be loaded in frame or iframe.
+- ```X-Frame-Options: SAMEORIGIN``` allows only if the site which wants to load has a same origin.
 
 ### Protecting Data in Transit with HTTP Strict Transport Security (HSTS)
 
