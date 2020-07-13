@@ -52,7 +52,7 @@ OS OpenData or Premium, via our simple sign-up process.
 
 This is where I have to admit some culpability for what follows.  I adknowledge that the email clearly says `all accounts will close` but I made the mistake of assuming that an alternative would be provided.  I have been a professional software developer for over 30 years, and in all that time I have *never* experienced a beta product that was simply switched off before an alternative has been provided. I thought perhaps I had just been lucky so I canvassed my colleagues.  None of them have ever used a beta product that was just switched off without an alternative either.
 
-Unfortunately, on Thursday 18th of June Oscar was due to demonstrate his app to a panel of investors.  For some reason, despite being told the trial would end on Wednesday 17th the service continued to be up into the morning of the 18th.  Then, 1 hour before Oscars presentation to *investors* the service went down, taking Oscar's product with it.
+Unfortunately, on Thursday 18th of June Oscar was due to demonstrate his app to a panel of investors.  For some reason, despite being told the trial would end on Wednesday 17th the service continued to be up into the morning of the 18th.  Then, 1 hour before Oscar's presentation to *investors* the service went down, taking Oscar's product with it.
 
  > The shutting down of the Data Hub rendered Walks & Waterfalls useless 1 hour before an investor presentation
  
