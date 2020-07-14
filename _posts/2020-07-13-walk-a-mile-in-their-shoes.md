@@ -1,7 +1,7 @@
 ---
 title: "Walk a mile in you customers' shoes"
 meta: "When you're trying to establish problem-solution fit it's really important to think like a customer, not a product owner"
-categories: Insights OS
+categories: Insights Startup
 author: "Paul Nebel"
 slug: "walk-a-mile-in-their-shoes"
 ---
@@ -14,7 +14,7 @@ As an example, I have been working with a startup that wants to help farmers man
 
 It occurred to me that, far from being a pain, this would be a positive gain for the farmer.  Most people get into farming because of a love of the land and a feeling of familiarity with their crops and the business of nurturing them.  It is only my opinion, but having known a farmer or two I felt that many farmers would like nothing better than to be freed from their desks to spend more time doing what they love.  What felt like a pain for the founder - that farmers would feel pressure to spend more time outside - could then be turned into a gain: 'Free yourself from the desk and spend more time on the farm doing what you know best'
 
-This is a simple but representative example of the kind of advantage that can be missed if you approach these sessions with your solution too much at the front of your mind.
+This is a simple but representative example of the kind of advantage that can be missed if you approach these sessions with your solution too much at the front of your mind. 
 
 So, how do we avoid missing opportunities by being stuck in the wrong mindset?
 
