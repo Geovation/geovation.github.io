@@ -2,6 +2,7 @@
 title: "Walk a mile in your customers' shoes"
 meta: "When you're trying to establish problem-solution fit it's really important to think like a customer, not a product owner"
 categories: Insights Startup
+author: "Paul Nebel"
 slug: "walk-a-mile-in-their-shoes"
 ---
 
