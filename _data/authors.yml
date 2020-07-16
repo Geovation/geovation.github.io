@@ -1,0 +1,27 @@
+Aymar Bell:
+  name        : "Aymar"
+  bio         : "Aymar is learning to be a software developer with a specialism in in ethical hacking."
+  avatar      : "/assets/images/Headshot_AymarBell.png"
+
+James Gardner:
+  name        : "James"
+  bio         : "James provides hands-on support from the very beginning of a startup’s journey. I’ll help founders understand their customers, decide what to build, and how and when to build it.  As businesses scale up James can act like a CTO and support them in growing a successful, investible team."
+  avatar      : "/assets/images/Headshot_JamesGardner.jpg"
+
+Paul Nebel:
+  name        : "Paul"
+  bio         : "Paul is aInnovation Facilitator and Virtual CTO specialising in business design and technology leadership."
+  avatar      : "/assets/images/Headshot_PaulNebel.jpg"
+
+
+Sebastian Ovide:
+  name        : "Seb"
+  bio         : "Seb started coding when he was a child, and now has over 20 years of professional experience building software for corporations, SMEs and startups.  Seb leads the Engineering Team, jumps into the trenches doing hands on work when possible, and works brainstorms with members about technology and team building."
+  avatar      : "/assets/images/Headshot_SebOvide.jpg"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/sebastianovide"
+    - label: "linkedin"
+      icon: "fab fa-fw fa-linkedin-square"
+      url: "https://twitter.com/sovide"
