@@ -8,6 +8,12 @@ James Gardner:
   bio         : "James provides hands-on support from the very beginning of a startup’s journey. I’ll help founders understand their customers, decide what to build, and how and when to build it.  As businesses scale up James can act like a CTO and support them in growing a successful, investible team."
   avatar      : "/assets/images/Headshot_JamesGardner.jpg"
 
+
+Johann Rajakarunanayake:
+  name        : "Johann"
+  bio         : "Johann was our Graduate Software Developer from July 2019 to September 2020. He tested and reviewed OS Products, and provided support to the wider team."
+  avatar      : "assets/images/Headshot_JohannRajakarunanayake.png"
+
 Paul Nebel:
   name        : "Paul"
   bio         : "Paul is an Innovation Facilitator and Virtual CTO specialising in business design and technology leadership."
@@ -25,3 +31,5 @@ Sebastian Ovide:
     - label: "linkedin"
       icon: "fab fa-fw fa-linkedin-square"
       url: "https://twitter.com/sovide"
+
+
