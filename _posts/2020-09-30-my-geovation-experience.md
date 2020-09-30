@@ -5,7 +5,7 @@ I started my role at Geovation as a Graduate Software Developer. Over the past y
 
 My general role was to create projects using products from OS in order to test them, then review these projects by writing blogs, highlighting positives as well as improvements to their service. My first project was a fairly simple project to add park paths using Mapbox for OS’s Zoomstack product.
 
-I spent a large amount of my work testing features from the OS Datahub API, which was still in its trial version, and giving feedback before the official launch. The main challenge was to create effective hypothetical scenarios, in order to test the features accordingly. All these projects were added to the Geovation sandbox, which you can find here. [a link](https://geovation.github.io/sandbox/)
+I spent a large amount of my work testing features from the OS Datahub API, which was still in its trial version, and giving feedback before the official launch. The main challenge was to create effective hypothetical scenarios, in order to test the features accordingly. All these projects were added to the Geovation sandbox, which you can find [here.](https://geovation.github.io/sandbox/)
 
 One of my favourite projects from the sandbox page was a coronavirus related project, showing the nearest secondary school to a hospital in the hypothetical case of hospitals getting full.
 
@@ -19,7 +19,7 @@ Towards the end of my role, I had the opportunity to support Geovation member Ga
 
 
 
-Finally, I created a more recent coronavirus related project as cases were starting to increase from the start of September. One of the main issues I had for checking cases was that there was no website which showed a visual display of weekly local cases in London. The best was Sky or BBC News, which showed numbers, but it was pretty time consuming having to check the cases in all the local areas in London one at a time. So, I decided to use OS Products to create a map visualisation showing the number of weekly coronavirus cases in London, as well as the increase/decrease from the previous weeks. I also used Chart.js to add bar charts which makes it easier for the user to identify particular trends, and whether cases are increasing or decreasing over the weeks. You can check out the full project here. [a link](https://jrajak10.github.io/london_coronavirus_cases/)
+Finally, I created a more recent coronavirus related project as cases were starting to increase from the start of September. One of the main issues I had for checking cases was that there was no website which showed a visual display of weekly local cases in London. The best was Sky or BBC News, which showed numbers, but it was pretty time consuming having to check the cases in all the local areas in London one at a time. So, I decided to use OS Products to create a map visualisation showing the number of weekly coronavirus cases in London, as well as the increase/decrease from the previous weeks. I also used Chart.js to add bar charts which makes it easier for the user to identify particular trends, and whether cases are increasing or decreasing over the weeks.
 
 
 
