@@ -73,7 +73,7 @@ Here's a little run-down of the team so you know who we are:
 
 
 <figure style="width: 100px; height: 100px; margin-top: 10px; margin-bottom: 10px;" class="align-left">
-  <img src="{{ site.url }}/assets/images/Headshot_Unknown.jpg" alt="">
+  <img src="{{ site.url }}/assets/images/Headshot_AbdulOmarFaruq.jpg" alt="">
 </figure>
 **Abdul Omar Faruq (`@Omar` on Slack):** Omar is our graduate engineer learning to be a software developer, supporting the team across a wide range of projects.
 
