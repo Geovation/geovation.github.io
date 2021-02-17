@@ -4,6 +4,7 @@ meta: "Only your customers have the answers you need. The sooner you can speak t
 description: "Only your customers have the answers you need. The sooner you can speak to them, the better it will be. This post shows you why and how."
 categories: Insights Startup
 author: "Paul Nebel"
+tags: ["customer validation", interviews, B2C]
 slug: "speak-to-customers-for-validation"
 ---
 
