@@ -3,9 +3,9 @@
 version: "3"
 
 services:
-  jekill:
+  jekyll:
     container_name: jekyll
-    image: jekyll/jekyll
+    image: jekyll/jekyll:3
     ports:
       - "4000:4000"
     volumes:
